@@ -3,19 +3,19 @@ import styles from './App.module.scss'
 
 function App() {
 
-    const [item, setItem] = useState({text: ''})
+    const [item, setItem] = useState({ text: '' })
     const [task, setTask] = useState([])
 
     const onChangeInput = (e) => {
-        const {value} = e.target
-        setItem({...item, text: value})
+        const { value } = e.target
+        setItem({ ...item, text: value })
     }
 
     const handlerClickAdd = () => {
-        if (item.text !== '') {
+        if(item.text !== '') {
             setTask([...task, item])
         }
-        setItem({text: ''})
+        setItem({ text: '' })
     }
 
     const deleteTask = (index) => {
@@ -49,5 +49,7 @@ function App() {
         </form>
     );
 }
+
+
 
 export default App;
