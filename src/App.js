@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import styles from './App.module.scss'
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
 
@@ -47,7 +47,5 @@ function App() {
         </form>
     );
 }
-
-
 
 export default App;
